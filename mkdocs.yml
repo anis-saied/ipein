@@ -1,4 +1,27 @@
-site_name: My Docs
-theme:
-  name: material
+site_name: Ipein Info
 
+site_url: https://anis-saied.github.io/ipein/
+
+theme:
+  name: readthedocs
+  hljs_style: github #github = default
+  
+  #material, readthedocs
+  # pip install mkdocs-cinder
+  # pip install mkdocs-bootstrap
+  # pip install mkdocs-windmill
+  # pip install mkdocs-material
+  # pip install mkdocs-readthedocs
+
+
+
+  
+#markdown_extensions:
+  #- codehilite:
+      #use_pygments: true  # This option enables syntax highlighting
+      #pygments_style: github-dark
+  #- fenced_code
+  
+nav:
+  - Home: index.md
+  - About: about.md
