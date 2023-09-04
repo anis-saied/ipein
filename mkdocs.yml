@@ -24,4 +24,5 @@ theme:
   
 nav:
   - Home: index.md
+  - Rappel : chp0_Rappel.md
   - About: about.md
