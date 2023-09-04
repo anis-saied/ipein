@@ -27,7 +27,7 @@ jobs:
         run: pip install xhtml2pdf  # Install xhtml2pdf library
       - name: Convert .py to .pdf
         run: |
-          find docs -type f -name "*.py" | while read -r file; do
+          find src -type f -name "*.py" | while read -r file; do
             python3 scripts/convert_py_to_pdf.py "$file"
           done
         working-directory: ${{ github.workspace }}
