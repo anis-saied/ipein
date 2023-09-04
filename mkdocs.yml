@@ -23,6 +23,6 @@ theme:
   #- fenced_code
   
 nav:
-  - Home: index.md
-  - Rappel : chp0_Rappel.md
-  - About: about.md
+  - Accueil: index.md
+  - Chp 0 Rappel : chp0_Rappel.md
+  - A propos: about.md

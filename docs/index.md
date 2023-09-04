@@ -1,66 +1,27 @@
 ---
 title: Ipein Info Home
-summary: A brief description of my document.
+summary: Partage de documents d'informatique de ipein
 authors:
-    - Waylan Limberg
-    - Tom Christie
-date: 2018-07-10
-some_url: https://example.com
+    - Anis SAIED
+date: 04-09-2023
 ---
-This is the first paragraph of the document.
-# Welcome to MkDocs
+# Bienvenue chez ipein info
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-```python
-def heloo():
-    print("hello")
-```
-
-
+Nous sommes ravis de vous accueillir sur notre site. Chez ipein info, nous sommes passionnés par l'informatique. 
 
 
 
 ```python
-def ok(): print("ko")
+def hello():
+    print("Bienvenue chez ipein info !")
 ```
 
-First Header | Second Header | Third Header
-:----------- |:-------------:| -----------:
-Left         | Center        | Right
+N'hésitez pas à explorer notre site pour découvrir tout ce que nous avons à offrir. 
 
+Si vous avez des questions ou avez besoin d'aide, n'hésitez pas à nous contacter. 
 
-| First Header | Second Header | Third Header |
-| ------------ | ------------- | ------------ |
-| Content Cell | Content Cell  | Content Cell |
-| Content Cell | Content Cell  | Content Cell |
+Nous sommes là pour vous aider à réussir.
 
+------
 
-
-```python
-def ok(): 
-    print("ko")
-```
-
-
-
-
-```python
-def greet(name):
-    """
-    This function greets the person passed in as a parameter.
-    """
-    print(f"Hello, {name}!")
-
-greet("Alice")
-```
-
+*La réussite au concours est à portée de main. Persévérez* ! 🌟💪
