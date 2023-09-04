@@ -23,6 +23,8 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
+      - name: Install xhtml2pdf
+        run: pip install xhtml2pdf  # Install xhtml2pdf library
       - name: Convert .py to .pdf
         run: |
           find docs -type f -name "*.py" | while read -r file; do
