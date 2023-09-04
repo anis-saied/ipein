@@ -1,27 +1,36 @@
-import sys
-import os
-from pygments import highlight
-from pygments.lexers import PythonLexer
-from pygments.formatters import HtmlFormatter
-from xhtml2pdf import pisa
-
 def convert_python_to_pdf(input_file, output_file):
     # Read the Python code from the input file
     with open(input_file, 'r') as file:
         python_code = file.read()
 
     # Create HTML content with syntax highlighting
-    formatter = HtmlFormatter(style='vs')#colorful
+    formatter = HtmlFormatter(style='vs', fontsize=12)  # Set font size to 12
     highlighted_code = highlight(python_code, PythonLexer(), formatter)
 
-    # Prepare HTML content
+    # Prepare HTML content with custom header and footer
+    custom_header = """
+    <div style="text-align: center; font-size: 16px; font-weight: bold;">
+        Custom Header
+    </div>
+    """
+    
+    custom_footer = """
+    <div style="text-align: center; font-size: 12px;">
+        Page <span class="page"></span> of <span class="topage"></span>
+    </div>
+    """
+
     html_content = f"""
     <html>
     <head>
         <style>{formatter.get_style_defs()}</style>
     </head>
     <body>
+        {custom_header}
+        <h1>IPIEN</h1>
+        <hr>
         {highlighted_code}
+        {custom_footer}
     </body>
     </html>
     """
