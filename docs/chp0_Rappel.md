@@ -22,5 +22,13 @@ Le premier chapitre vise à revisiter les principales notions du langage de prog
     + [Ex1_SP1.py](src/2/chp0/serie1/ex1_sp1.py) | [Ex1_SP1.pdf](../src/2/chp0/serie1/ex1_sp1.pdf)
     + [Ex1_SM1.py](src/2/chp0/serie1/ex1_sm1.py) | [Ex1_SM1.pdf](../src/2/chp0/serie1/ex1_sm1.pdf)
     + [Ex1_ST1.py](src/2/chp0/serie1/ex1_st1.py) | [Ex1_ST1.pdf](../src/2/chp0/serie1/ex1_st1.pdf)
+    + [Ex1_ST3.py](src/2/chp0/serie1/ex1_st3.py) | [Ex1_ST3.pdf](../src/2/chp0/serie1/ex1_st3.pdf)
+    ## Notes de cours
+    - si L[i]= valeur ou L.append(val) => pas de return L
+    - utiliser la boucle `while` si:
+      - pas variable
+      - nombre d'itérations inconnu à l'avance
+    - Re-exécuter la ligne précédente par une boucle (for ou while) ou appel récursif.
+
   + Corrigé de l'exercice 2 : disponible au format PDF et Python (.py)
 
