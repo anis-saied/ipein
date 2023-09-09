@@ -25,6 +25,7 @@ Le premier chapitre vise à revisiter les principales notions du langage de prog
     + [Ex1_ST1.py](src/2/chp0/serie1/ex1_st1.py) | [Ex1_ST1.pdf](../src/2/chp0/serie1/ex1_st1.pdf)
     + [Ex1_ST3.py](src/2/chp0/serie1/ex1_st3.py) | [Ex1_ST3.pdf](../src/2/chp0/serie1/ex1_st3.pdf)
     + [Ex1_SM4.py](src/2/chp0/serie1/ex1_sm4.py) | [Ex1_SM4.pdf](../src/2/chp0/serie1/ex1_sm4.pdf)
+    + [Ex1_SP3.py](src/2/chp0/serie1/ex1_sp3.py) | [Ex1_SP3.pdf](../src/2/chp0/serie1/ex1_sp3.pdf)
     ### Notes du cours
     - si L[i]= valeur ou L.append(val) => pas de return L
     - utiliser la boucle `while` si:
