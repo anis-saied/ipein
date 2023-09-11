@@ -39,15 +39,15 @@ Le premier chapitre vise à revisiter les principales notions du langage de prog
     - On ajoute `return` devant le nom de l'appel récursif si le résultat à retourné est créé  dans la fonction récursive. 
     - Exemples : 
     
-    ```python
+```python
     def f():
         return 1
     def g():
         f()
     x = g() # x == ?
-    ```
-    
-    
-    
+```
+
+
+​    
   + Corrigé de l'exercice 2 : disponible au format PDF et Python (.py)
 
