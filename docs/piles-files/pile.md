@@ -23,10 +23,10 @@ Ce TP est conçu pour vous aider à :
 
 ## Enoncé et corrigés
 
-* Enoncé : disponible au format [PDF](src/2/chp1/tp2/2eme_info_chp1_tp2_ennonce.pdf)
+* Enoncé : disponible au format [PDF](../../src/2/chp1/tp2/2eme_info_chp1_tp2_ennonce.pdf)
 
 * Corrigé : disponible au format PDF et Python (.py)
 
-    + [TP2_SP1.py](src/2/chp1/tp2/tp2_sp1.py)  | [TP2_SP1.pdf](../src/2/chp1/tp2/tp2_sp1.pdf)
-    + [TP2_SM1.py](src/2/chp1/tp2/tp2_sm1.py)  | [TP2_SM1.pdf](../src/2/chp1/tp2/tp2_sm1.pdf)
+    + [TP2_SP1.py](../../src/2/chp1/tp2/tp2_sp1.py)  | [TP2_SP1.pdf](../../src/2/chp1/tp2/tp2_sp1.pdf)
+    + [TP2_SM1.py](../../src/2/chp1/tp2/tp2_sm1.py)  | [TP2_SM1.pdf](../../src/2/chp1/tp2/tp2_sm1.pdf)
 

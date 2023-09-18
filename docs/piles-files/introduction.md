@@ -19,7 +19,6 @@ Comprendre ces types est fondamental pour devenir un développeur Python compét
 
 ![types.png](./types.png)
 
-![pile.png](./pile.png)
 <div style="text-align: right; margin-bottom:20px;">
 <i>This graph is created 
 by <a href="https://www.linkedin.com/in/anis-saied">@anis-saied</a> with &hearts; 
