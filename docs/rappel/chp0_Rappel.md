@@ -31,27 +31,30 @@ Le premier chapitre vise à revisiter les principales notions du langage de prog
   + Corrigé de l'exercice 2 : disponible au format PDF et Python (.py)
   
     + [Ex2_SM1.py](src/2/chp0/serie1/ex2_sm1.py) | [Ex2_SM1.pdf](../src/2/chp0/serie1/ex2_sm1.pdf)
+    + [Ex2_SM4.py](src/2/chp0/serie1/ex2_sm4.py) | [Ex2_SM1.pdf](../src/2/chp0/serie1/ex2_sm4.pdf)
+    + [Ex2_SP3.py](src/2/chp0/serie1/ex2_sp3.py) | [Ex2_SP3.pdf](../src/2/chp0/serie1/ex2_sp3.pdf)
+    + [Ex2_SP2.py](src/2/chp0/serie1/ex2_sp2.py) | [Ex2_SP2.pdf](../src/2/chp0/serie1/ex2_sp2.pdf)
+    + [Ex2_ST3.py](src/2/chp0/serie1/ex2_st3.py) | [Ex2_ST3.pdf](../src/2/chp0/serie1/ex2_st3.pdf)
   
-    ### Notes du cours
-    - si `L[i]= valeur` ou `L.append(val)` => pas de `return L`
-    - Si `L` passée en paramètre `init(L)` et dans `init` on a fait `L=val` il faut ajouter à la fin de la fonction `return L`
-    - utiliser la boucle `while` si:
-      - Le pas est variable
-      - Le nombre d'itérations est inconnu à l'avance
-    - Pour re-exécuter la ligne précédente 
-      - on utilise une boucle (`for` ou `while`) 
-      - on crée une fonction récursive.
-    - On ajoute `return` devant le nom de l'appel récursif si le résultat à retourné est créé  dans la fonction récursive. 
-    - Exemples : 
+### Notes du cours
+  - si `L[i]= valeur` ou `L.append(val)` => pas de `return L`
+  - Si `L` passée en paramètre `init(L)` et dans `init` on a fait `L=val` il faut ajouter à la fin de la fonction `return L`
+  - utiliser la boucle `while` si:
+    - Le pas est variable
+    - Le nombre d'itérations est inconnu à l'avance
+  - Pour re-exécuter la ligne précédente 
+    - on utilise une boucle (`for` ou `while`) 
+    - on crée une fonction récursive.
+  - On ajoute `return` devant le nom de l'appel récursif si le résultat à retourner est créé dans la fonction récursive. 
+  - Exemples : 
+
 ```python
-    def f():
-        return 1
-    def g():
-        f()
-    x = g() # x == ?
+  def f():
+      return 1
+
+  def g():
+      f()
+
+  x = g() # x == ?
 ```
-
-
-​    
-  + Corrigé de l'exercice 2 : disponible au format PDF et Python (.py)
 

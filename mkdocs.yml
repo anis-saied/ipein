@@ -24,5 +24,11 @@ theme:
   
 nav:
   - Accueil: index.md
-  - Chp 0 Rappel : chp0_Rappel.md
+  - Chp 0 Rappel : 
+    - TP1 Rappel Python : rappel/chp0_Rappel.md
+  - Chp 1 Piles & files: 
+    - Introduction : piles-files/introduction.md
+    - Structures de Données Avancées : piles-files/cours-piles-files.md
+    - TP2 Les Piles : piles-files/pile.md
+    #- TP3 Les Files : piles-files/file.md
   - A propos: about.md
