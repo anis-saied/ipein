@@ -16,9 +16,9 @@ def hello():
 
 ## Programme Info 2<sup>ème</sup> année
 
-1. [Rappel](/rappel/chp0_Rappel/)
+1. [Rappel](rappel/chp0_Rappel/)
 
-2. [Les structures de données avancées : Piles et Files](/piles-files/introduction/)
+2. [Les structures de données avancées : Piles et Files](piles-files/introduction/)
 
 3. Programmation Orientée Objet 
 
