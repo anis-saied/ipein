@@ -31,4 +31,6 @@ Ce TP est conçu pour vous aider à :
     + [TP2_SM1.py](../../src/2/chp1/tp2/tp2_sm1.py)  | [TP2_SM1.pdf](../../src/2/chp1/tp2/tp2_sm1.pdf)
     + [TP2_SM4.py](../../src/2/chp1/tp2/tp2_sm4.py)  | [TP2_SM4.pdf](../../src/2/chp1/tp2/tp2_sm4.pdf)
     + [TP2_ST3.py](../../src/2/chp1/tp2/tp2_st3.py)  | [TP2_ST3.pdf](../../src/2/chp1/tp2/tp2_st3.pdf)
+    + [TP2_SP3.py](../../src/2/chp1/tp2/tp2_sp3.py)  | [TP2_SP3.pdf](../../src/2/chp1/tp2/tp2_sp3.pdf)
+
 
