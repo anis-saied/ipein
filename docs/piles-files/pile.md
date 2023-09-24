@@ -10,7 +10,7 @@ date: 17-09-2023
 
 ## Objectif
 
-L'objectif de ce TP est de vous familiariser avec les structures de données de piles en Python et de comprendre comment elles fonctionnent. Les piles sont des structures de données fondamentales utilisées pour résoudre une variété de problèmes informatiques, notamment la gestion de la mémoire, l'évaluation d'expressions mathématiques, la navigation dans un logiciel, et bien plus encore. 
+L'objectif de ce TP est de vous familiariser avec les structures de données de **piles** en Python et de comprendre comment elles fonctionnent. Les piles sont des structures de données fondamentales utilisées pour résoudre une variété de problèmes informatiques, notamment la gestion de la mémoire, l'évaluation d'expressions mathématiques, la navigation dans un logiciel, et bien plus encore. 
 
 Ce TP est conçu pour vous aider à :
 
@@ -34,3 +34,8 @@ Ce TP est conçu pour vous aider à :
     + [TP2_SP3.py](../../src/2/chp1/tp2/tp2_sp3.py)  | [TP2_SP3.pdf](../../src/2/chp1/tp2/tp2_sp3.pdf)
     + [TP2_SP2.py](../../src/2/chp1/tp2/tp2_sp2.py)  | [TP2_SP2.pdf](../../src/2/chp1/tp2/tp2_sp2.pdf)
 
+
+## Remarques Importantes
+
+- **Gestion des erreurs de pile vide**: Assurez-vous de manipuler les piles avec précaution pour éviter les erreurs liées aux piles vides. Utilisez des vérifications appropriées avant d'effectuer des opérations de dépilement, telles que `:` avant d'appeler `depiler(p)`.
+- **Documentez votre code**: Lorsque vous utilisez des piles dans vos programmes, assurez-vous de les documenter adéquatement pour expliquer leur utilisation et les invariants qu'elles maintiennent.
