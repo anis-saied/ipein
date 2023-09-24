@@ -10,13 +10,15 @@ date: 24-09-2023
 
 ## Objectif
 
-L'objectif de ce TP est de vous familiariser avec les structures de données de **files** en Python et de comprendre comment elles fonctionnent. Les *files* sont des structures de données fondamentales utilisées pour résoudre une variété de problèmes informatiques, notamment la gestion de l'ordonnancement des tâches, l'accès à des ressources partagées de manière équitable, la modélisation des processus, et bien plus encore.
+L'objectif de ce TP est de vous familiariser avec les structures de données de **files** en Python et de comprendre comment elles fonctionnent.
+
+Les **files** sont des structures de données fondamentales utilisées pour résoudre une variété de problèmes informatiques, notamment la gestion de l'ordonnancement des tâches, l'accès à des ressources partagées de manière équitable, et bien plus encore.
 
 Ce TP est conçu pour vous aider à :
 
 - Comprendre les concepts de base des *files*, y compris le principe **First In, First Out (FIFO)**.
 - Implémenter une file en Python à l'aide de *listes*.
-- Effectuer des opérations courantes sur une file, telles que enqueue (enfiler), dequeue (defiler), peek (sommet), isEmpty, et size.
+- Effectuer des opérations courantes sur une file, telles que `enqueue` (enfiler), `dequeue` (defiler), `peek` (sommet), `isEmpty`, et `size`.
 - Résoudre des problèmes pratiques en utilisant des files, tels que la simulation de file d'attente.
 
 À la fin, vous serez prêt à appliquer vos connaissances sur les files à des problèmes réels et à poursuivre votre exploration des structures de données en informatique.
