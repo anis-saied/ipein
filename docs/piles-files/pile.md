@@ -37,5 +37,5 @@ Ce TP est conçu pour vous aider à :
 
 ## Remarques Importantes
 
-- **Gestion des erreurs de pile vide**: Assurez-vous de manipuler les piles avec précaution pour éviter les erreurs liées aux piles vides. Utilisez des vérifications appropriées avant d'effectuer des opérations de dépilement, telles que `:` avant d'appeler `depiler(p)`.
+- **Gestion des erreurs de pile vide**: Assurez-vous de manipuler les piles avec précaution pour éviter les erreurs liées aux piles vides. Utilisez des vérifications appropriées avant d'effectuer des opérations de dépilement, telles que `if not pile_vide(p):` avant d'appeler `depiler(p)`.
 - **Documentez votre code**: Lorsque vous utilisez des piles dans vos programmes, assurez-vous de les documenter adéquatement pour expliquer leur utilisation et les invariants qu'elles maintiennent.

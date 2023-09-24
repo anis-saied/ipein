@@ -30,5 +30,5 @@ nav:
     - Introduction : piles-files/introduction.md
     - Structures de Données Avancées : piles-files/cours-piles-files.md
     - TP2 Les Piles : piles-files/pile.md
-    #- TP3 Les Files : piles-files/file.md
+    - TP3 Les Files : piles-files/file.md
   - A propos: about.md
