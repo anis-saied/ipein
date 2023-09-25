@@ -63,8 +63,38 @@ def verif_parentheses(expr):
 
     return L if pile_vide(p) else False
 
+# https://anis-saied.github.io/ipein
+
 # q3
+def calcul_expr_arith(ch):
+    p = creer_pile()
+    for c in ch:
+        if c.isdigit():
+            empiler(p,c) 
+        else:
+            n1,n2 = depiler(p), depiler(p)
+            empiler(eval(n2+c+n1))
+    return sommet(p)
+
 # ex3
+def permut_circ(p,n):
+    p1 = creer_pile()
+    for i in range(n):
+        x = depiler(p)
+        
+        #vider la pile p dans p1
+        for j in range(taille(p)):
+            empiler(p1, depiler(p))
+        
+        empiler(p,x)
+
+        #vider p1 dans p
+        while taille(p1)>0:
+            empiler(p,depiler(p1))
+
+
+
+
 # ex4
 
 
