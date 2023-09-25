@@ -70,6 +70,31 @@ def calc_expr_arith(expr):
     
     return depiler(p)
 
+# Ex 3
+def permut_circ(p,n):
+    p1 = creer_pile()
+    p2 = creer_pile()
+    for i in range(n):
+        empiler(p1,depiler(p))
+
+    for i in range(taille(p)-n):
+        empiler(p2,depiler(p))
+        
+    while taille(p1)>0:
+        empiler(p,depiler(p1))
+
+    while not pile_vide(p2):
+        empiler(p,depiler(p2))
+
+# Ex4
+def somme(p):
+    if taille(p)==0: return 0
+    else:
+        s = depiler(p)
+        if type(s)==int:
+            return s + somme(p)
+        else:
+            return somme(s)+somme(p)
 
 
 
