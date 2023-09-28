@@ -62,3 +62,53 @@ def verif_parenthese(ch):
             L += [(depiler(p),i)]
             
     return L if pile_vide(p) else False
+
+
+def cal_expr_arith(expr):
+    '''
+    expr : un expression arithmétique postfixée
+    '''
+    p = creer_pile()
+    for c in expr:
+        if c.isdigit():
+            empiler(p,int(c))
+        else:
+            n1,n2 = depiler(p),depiler(p)
+            if c=='+': r = n2 + n1
+            elif c=='-': r = n2 - n1
+            elif c== '/': r = n2 / n1
+            elif c== '*': r = n2 * n1
+            empiler(p,r)
+    return sommet(p)
+
+# Ex 3
+def premut_circ(p,n):
+    # repeter n fois
+    for j in range(n):
+        # mettre le sommet au fond de la pile
+        s = depiler(p)
+        # vider la pile p dans p1
+        p1 = creer_pile()
+        while not pile_vide(p):
+            x = depiler(p)
+            empiler(p1,x)
+        #mettre s dans p (p est vide)
+        empiler(p,s)
+        t = taille(p1)
+        for i in range(t):
+            empiler(p,depiler(p1))
+
+# ex 4
+def somme(p):
+    if pile_vide(p): return 0
+    else:
+        s = depiler(p)
+        return somme(p) + s if type(s)==int else somme(s)
+        """    
+        if type(s) == int:
+            return s +  somme(p)
+        else:
+            return somme(s) + somme(p) 
+        """
+        
+        
