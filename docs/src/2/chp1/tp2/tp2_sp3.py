@@ -75,6 +75,39 @@ def verif_parentheses(ch):
     if pile_vide(p) : return L
     return False
 
+def calc_expr_arith(expr):
+    """expr : postfixée """
+    p = creer_pile()
+    for c in expr:
+        if c not in "+-*/":
+            empiler(p,int(c))
+        else:
+            b,a = depiler(p),depiler(p)
+            if c=='+':   r = a+b
+            elif c=='-': r = a-b
+            elif c=='*': r = a*b
+            elif c=='/': 
+                if b==0:
+                    raise Exception("impo")
+                else:
+                    r = a/b
+            empiler(p,r)
+            #empiler(p,eval(str(a)+c+str(b)))
+    resultat = depiler(p)
+    return resultat # return sommet(p)
+
+# ex3
+def permu_circ(p,n):
+    p1 = creer_pile()
+    for i in range(n):
+        s = depiler(p)
+        while not pile_vide(p):
+            empiler(p1, depiler(p))
+        empiler(p,s)
+        while not pile_vide(p1):
+            empiler(p,depiler(p1))
+
+
 
             
 

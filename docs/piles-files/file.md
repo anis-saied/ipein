@@ -32,10 +32,9 @@ Ce TP est conçu pour vous aider à :
     + [TP3_SP1.py](../../src/2/chp1/tp3/tp3_sp1.py)  | [TP3_SP1.pdf](../../src/2/chp1/tp3/tp3_sp1.pdf)
     + [TP3_SM1.py](../../src/2/chp1/tp3/tp3_sm1.py)  | [TP3_SM1.pdf](../../src/2/chp1/tp3/tp3_sm1.pdf) 
     + [TP3_ST3.py](../../src/2/chp1/tp3/tp3_st3.py)  | [TP3_ST3.pdf](../../src/2/chp1/tp3/tp3_st3.pdf)
-   + [TP3_SM4.py](../../src/2/chp1/tp3/tp3_sm4.py)  | [TP3_SM4.pdf](../../src/2/chp1/tp3/tp3_sm4.pdf)
- <!--     
+    + [TP3_SM4.py](../../src/2/chp1/tp3/tp3_sm4.py)  | [TP3_SM4.pdf](../../src/2/chp1/tp3/tp3_sm4.pdf)
     + [TP3_SP3.py](../../src/2/chp1/tp3/tp3_sp3.py)  | [TP3_SP3.pdf](../../src/2/chp1/tp3/tp3_sp3.pdf)
-    + [TP3_SP2.py](../../src/2/chp1/tp3/tp3_sp2.py)  | [TP3_SP2.pdf](../../src/2/chp1/tp3/tp3_sp2.pdf) 
+ <!--   + [TP3_SP2.py](../../src/2/chp1/tp3/tp3_sp2.py)  | [TP3_SP2.pdf](../../src/2/chp1/tp3/tp3_sp2.pdf) 
 
 ## Remarques Importantes
 
