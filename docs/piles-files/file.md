@@ -34,8 +34,8 @@ Ce TP est conçu pour vous aider à :
     + [TP3_ST3.py](../../src/2/chp1/tp3/tp3_st3.py)  | [TP3_ST3.pdf](../../src/2/chp1/tp3/tp3_st3.pdf)
     + [TP3_SM4.py](../../src/2/chp1/tp3/tp3_sm4.py)  | [TP3_SM4.pdf](../../src/2/chp1/tp3/tp3_sm4.pdf)
     + [TP3_SP3.py](../../src/2/chp1/tp3/tp3_sp3.py)  | [TP3_SP3.pdf](../../src/2/chp1/tp3/tp3_sp3.pdf)
- <!--   + [TP3_SP2.py](../../src/2/chp1/tp3/tp3_sp2.py)  | [TP3_SP2.pdf](../../src/2/chp1/tp3/tp3_sp2.pdf) 
-
+    + [TP3_SP2.py](../../src/2/chp1/tp3/tp3_sp2.py)  | [TP3_SP2.pdf](../../src/2/chp1/tp3/tp3_sp2.pdf) 
+<!--
 ## Remarques Importantes
 
 - **Gestion des erreurs de file vide**: Assurez-vous de manipuler les files avec précaution pour éviter les erreurs liées aux files vides. Utilisez des vérifications appropriées avant d'effectuer des opérations de défilement, telles que `if not file_vide(f):` avant d'appeler `defiler(f)`.

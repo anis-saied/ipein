@@ -94,7 +94,52 @@ def verif_parentheses(ch):
     if pile_vide(p): return L
     return False
 
-# Rest TODO
+def calc_expr_arith(expr):
+    # expr : post fixée
+    p = creer_pile()
+    for e in expr:
+        if e.isdigit():
+            empiler(p,int(e))
+        else:
+            b = depiler(p)
+            a = depiler(p)
+            #e : opération de type str
+            if e == '+': r = a + b
+            elif e=='-': r = a - b
+            elif e=='*': r = a * b
+            elif e=='/': r = a / b
+            empiler(p,r)
+    return sommet(p)
+
+
+# Ex 3
+def permut_circ(p,n):
+    p1 = creer_pile()
+    for i in range(n):
+        s = depiler(p)
+        #vider p dans p1
+        while taille(p)>0:
+            empiler(p1,depiler(p))
+        # mettre s au fond de p
+        empiler(p,s)
+        
+        #remettre les elts de p
+        while taille(p1)>0:
+            empiler(p,depiler(p1))
+
+# Ex 4
+def somme(p):
+    if taille(p)==0 : 
+        return 0
+    else:
+        s= depiler(p)
+        if type(s)==int:
+            return s + somme(p)
+        else:
+            return somme(s) + somme(p)
+        
+
+
 
 
 
