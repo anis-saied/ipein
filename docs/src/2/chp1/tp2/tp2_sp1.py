@@ -92,11 +92,14 @@ def permut_circ(p,n):
         while taille(p1)>0:
             empiler(p,depiler(p1))
 
-
-
-
 # ex4
-
+def somme(p):
+    if pile_vide(p): return 0
+    x = depiler(p)
+    if type(x)==int:
+        return somme(p)+ x 
+    else:
+        return somme(p)+somme(x)
 
 
 
