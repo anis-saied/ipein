@@ -112,12 +112,3 @@ def defiler(f):
         s = f[2][t]
         f[1]+=1
         return s
-
-        
-    
-
-
-
-
-
-
