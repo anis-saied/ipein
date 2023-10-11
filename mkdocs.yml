@@ -4,7 +4,7 @@ site_url: https://anis-saied.github.io/ipein/
 
 theme:
   name: readthedocs
-  hljs_style: github #github = default
+  hljs_style:  github #github = default
   
   #material, readthedocs
   # pip install mkdocs-cinder
@@ -13,8 +13,9 @@ theme:
   # pip install mkdocs-material
   # pip install mkdocs-readthedocs
 
-
-
+#<meta name="google-adsense-account" content="ca-pub-8815924748349799">
+extra_css:
+  - css/style.css
   
 #markdown_extensions:
   #- codehilite:
@@ -32,17 +33,21 @@ nav:
     - TP2 Les Piles : piles-files/pile.md
     - TP3 Les Files : piles-files/file.md
   - Chp 2 POO : 
-    - Plan du cours : poo/plan.md
-    - Introduction : poo/introduction.md
-    - Classes et objets: poo/classes_objets.md
-    - Attributs et méthodes: poo/attributs_methodes.md
-    - Constructeurs et destructeurs : poo/constructeur_destructeur.md
-    - Héritage de classes : poo/heritage.md
-    - Surcharge de méthodes : poo/surcharge.md
-    - Polymorphisme : poo/polymorphisme.md
-    - Méthodes spéciales : poo/methodes_speciales.md
-    - Encapsulation : poo/encapsulation.md
-    - Utilisation avancée de la POO : poo/poo_avancee.md
+    - Plan du cours : poo/seance-1/plan.md
+    - Introduction : poo/seance-1/introduction.md
+    - Classes et objets: poo/seance-1/classes_objets.md
+    - Attributs: poo/seance-1/attributs.md
+    - Méthodes: poo/seance-1/methodes.md
+    - Constructeurs et destructeurs : poo/seance-1/constructeur_destructeur.md
+    - TP1 POO : poo/seance-1/exercices.md
+    - TP1 POO Corrigé: poo/seance-1/exercices-corrige.md
+    
+    # - Héritage de classes : poo/seance-1/heritage.md
+    # - Surcharge de méthodes : poo/seance-1/surcharge.md
+    # - Polymorphisme : poo/seance-1/polymorphisme.md
+    # - Méthodes spéciales : poo/seance-1/methodes_speciales.md
+    # - Encapsulation : poo/seance-1/encapsulation.md
+    # - Utilisation avancée de la POO : poo/seance-1/poo_avancee.md
 
   - Aide: 
     - Utilitaires : aide/tools.md

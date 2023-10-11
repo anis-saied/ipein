@@ -20,7 +20,7 @@ def hello():
 
 2. [Les structures de données avancées : Piles et Files](piles-files/introduction/)
 
-3. Programmation Orientée Objet 
+3. [Programmation Orientée Objet](poo/plan/)
 
 4. Les Bases de Données (SQLite)
 

@@ -1,0 +1,14 @@
+.section > pre > code{
+  font-size: 1rem;
+  font-family: courier;
+}
+
+.section > pre > code>span{
+  display: inline-block;
+  padding-bottom: 0.5em;
+}
+
+
+h2{
+  border-bottom: 1px solid lightgray;
+}
