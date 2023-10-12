@@ -13,6 +13,7 @@ Nous sommes ravis de vous accueillir sur notre site. Chez ipein info, nous somme
 def hello():
     print("Bienvenue chez ipein info !")
 ```
+Télécharger le [Programme officiel d'informatique ](./prog_info_prepa.pdf)
 
 ## Programme Info 2<sup>ème</sup> année
 

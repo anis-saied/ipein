@@ -33,14 +33,14 @@ nav:
     - TP2 Les Piles : piles-files/pile.md
     - TP3 Les Files : piles-files/file.md
   - Chp 2 POO : 
-    - Plan du cours : poo/seance-1/plan.md
-    - Introduction : poo/seance-1/introduction.md
+    - Plan du cours : poo/plan.md
+    - Introduction : poo/introduction.md
     - Classes et objets: poo/seance-1/classes_objets.md
     - Attributs: poo/seance-1/attributs.md
     - Méthodes: poo/seance-1/methodes.md
     - Constructeurs et destructeurs : poo/seance-1/constructeur_destructeur.md
-    - TP1 POO : poo/seance-1/exercices.md
-    - TP1 POO Corrigé: poo/seance-1/exercices-corrige.md
+    - Exercices POO : poo/seance-1/exercices.md
+    - Exercices POO Corrigé: poo/seance-1/exercices-corrige.md
     
     # - Héritage de classes : poo/seance-1/heritage.md
     # - Surcharge de méthodes : poo/seance-1/surcharge.md

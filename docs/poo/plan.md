@@ -27,6 +27,9 @@ Le cours sur la POO en Python sera divisé en trois séances, chacune approfondi
 3. Attributs et méthodes.
 4. Constructeurs et destructeurs.
 
+Télécharger : [Syntaxe de Base de la POO en Python.pdf](./seance-1/POO_presentation_1.pdf)
+
+
 ###### Séance 2 : Héritage et Polymorphisme
 
 1. Héritage de classes.
