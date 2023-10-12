@@ -27,7 +27,6 @@ Télécharger le [Programme officiel d'informatique ](./prog_info_prepa.pdf)
 
 5. Simulation numérique
 
-    
 
 N'hésitez pas à explorer notre site pour découvrir tout ce que nous avons à offrir. 
 
