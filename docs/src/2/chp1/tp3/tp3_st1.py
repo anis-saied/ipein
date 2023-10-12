@@ -65,17 +65,3 @@ def nb_hamming(n):
         enfiler(f2,2*k)
         enfiler(f3,3*k)
         enfiler(f5,5*k)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
