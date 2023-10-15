@@ -27,17 +27,26 @@ Le cours sur la POO en Python sera divisé en trois séances, chacune approfondi
 3. Attributs et méthodes.
 4. Constructeurs et destructeurs.
 
-Télécharger : [Syntaxe de Base de la POO en Python.pdf](./seance-1/POO_presentation_1.pdf)
+Télécharger : [Syntaxe de Base de la POO en Python.pdf](./seance-1/POO_classe_objet.pdf)
 
+Corrigé des exercices :
 
-###### Séance 2 : Héritage et Polymorphisme
+- [Ex1 class rectangle.py](../../src/2/chp2/s1/ex1_class_recatngle.py) - [Ex1 class rectangle.pdf](../../src/2/chp2/s1/ex1_class_recatngle.pdf)
+- [Ex2 class voiture.py](../../src/2/chp2/s1/ex2_class_voiture.py) - [Ex2 class voiture.pdf](../../src/2/chp2/s1/ex2_class_voiture.pdf)
+- [Ex3 class point.py](../../src/2/chp2/s1/ex3_class_point.py) - [Ex3 class point.pdf](../../src/2/chp2/s1/ex3_class_point.pdf)
+
+###### Séance 2 : Héritage, Polymorphisme et Surcharges des méthodes
 
 1. Héritage de classes.
-2. Surcharge de méthodes.
-3. Polymorphisme.
+2. Polymorphisme.
+3. Surcharge de méthodes.
+
+Télécharger : [Héritage, Polymorphisme et Surcharges des méthodes en Python.pdf](./seance-2/POO_hritage_polymorphisme_surcharge.pdf)
+
+Corrigé des exercices :
 
 ###### Séance 3 : Méthodes Spéciales et Utilisation Avancée
 
-1. Méthodes spéciales en Python (e.g., __str__, __eq__, __add__).
+1. Méthodes spéciales en Python (e.g., `__str__`, `__eq__`, `__add__`).
 2. Encapsulation.
 3. Utilisation avancée de la POO.

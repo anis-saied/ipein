@@ -42,9 +42,9 @@ nav:
     - Exercices POO : poo/seance-1/exercices.md
     - Exercices POO Corrigé: poo/seance-1/exercices-corrige.md
     
-    # - Héritage de classes : poo/seance-1/heritage.md
-    # - Surcharge de méthodes : poo/seance-1/surcharge.md
-    # - Polymorphisme : poo/seance-1/polymorphisme.md
+    # - Héritage de classes : poo/seance-2/heritage.md
+    # - Polymorphisme : poo/seance-2/polymorphisme.md
+    # - Surcharge de méthodes : poo/seance-2/surcharge_methodes.md
     # - Méthodes spéciales : poo/seance-1/methodes_speciales.md
     # - Encapsulation : poo/seance-1/encapsulation.md
     # - Utilisation avancée de la POO : poo/seance-1/poo_avancee.md
