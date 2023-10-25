@@ -43,10 +43,9 @@ Corrigé des exercices :
 
 Télécharger : [Héritage, Polymorphisme et Surcharges des méthodes en Python.pdf](./seance-2/POO_hritage_polymorphisme_surcharge.pdf)
 
-Corrigé des exercices :
-
 ###### Séance 3 : Méthodes Spéciales et Utilisation Avancée
 
-1. Méthodes spéciales en Python (e.g., `__str__`, `__eq__`, `__add__`).
-2. Encapsulation.
-3. Utilisation avancée de la POO.
+1. La classe Object. 
+2. Les Méthodes spéciales en Python (e.g., `__str__`, `__eq__`, `__add__`).
+3. Encapsulation.
+

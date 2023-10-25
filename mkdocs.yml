@@ -39,14 +39,16 @@ nav:
     - Attributs: poo/seance-1/attributs.md
     - Méthodes: poo/seance-1/methodes.md
     - Constructeurs et destructeurs : poo/seance-1/constructeur_destructeur.md
-    - Exercices POO : poo/seance-1/exercices.md
-    - Exercices POO Corrigé: poo/seance-1/exercices-corrige.md
-    
-    # - Héritage de classes : poo/seance-2/heritage.md
-    # - Polymorphisme : poo/seance-2/polymorphisme.md
+    #- Exercices POO : poo/seance-1/exercices.md
+    #- Exercices POO Corrigé: poo/seance-1/exercices-corrige.md
+    # seance 2
+    - Héritage de classes : poo/seance-2/heritage.md
+    - Polymorphisme : poo/seance-2/polymorphisme.md
+    # seance 3
+    - Classe Object : poo/seance-3/class_object.md
+    - Méthodes spéciales : poo/seance-3/methodes_speciales.md
+    - Encapsulation : poo/seance-3/encapsulation.md
     # - Surcharge de méthodes : poo/seance-2/surcharge_methodes.md
-    # - Méthodes spéciales : poo/seance-1/methodes_speciales.md
-    # - Encapsulation : poo/seance-1/encapsulation.md
     # - Utilisation avancée de la POO : poo/seance-1/poo_avancee.md
 
   - Aide: 

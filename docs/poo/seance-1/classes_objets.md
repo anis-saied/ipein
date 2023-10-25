@@ -31,8 +31,8 @@ Un objet est une instance d'une classe. C'est une entité concrète qui possède
 Exemple de création d'un objet à partir de la classe *Personne* :
 
 ```python
-personne1 = Personne("Alice", 30)
-personne2 = Personne("Bob", 25)
+personne1 = Personne("Ahmed", 30)
+personne2 = Personne("Sami", 25)
 ```
 
 ## Création de classes et d'objets
