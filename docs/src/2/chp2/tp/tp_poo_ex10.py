@@ -58,7 +58,7 @@ p.data={1:2,3:4}
 q = PolyCreux()
 q.data={1:2,3:-4,5:4}
 #appel à __call__ : objet(x0)
-#print(p(0))
+print(p(0))
 pq = p+q
 print(pq.data)
 
