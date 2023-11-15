@@ -3,7 +3,6 @@ IPEIN
 CHP 2 :  POO
 Exercice : 10
 '''
-
 class PolyCreux():
     def __init__(self):
         self.data ={}
