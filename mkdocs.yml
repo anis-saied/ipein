@@ -34,19 +34,20 @@ nav:
     - TP3 Les Files : piles-files/file.md
   - Chp 2 POO : 
     - Plan du cours : poo/plan.md
+    - TP POO : poo/tp-poo.md
     - Introduction : poo/introduction.md
-    - Classes et objets: poo/seance-1/classes_objets.md
+    - Classes et objets: poo/seance-1/classes-objets.md
     - Attributs: poo/seance-1/attributs.md
     - Méthodes: poo/seance-1/methodes.md
-    - Constructeurs et destructeurs : poo/seance-1/constructeur_destructeur.md
+    - Constructeurs et destructeurs : poo/seance-1/constructeur-destructeur.md
     #- Exercices POO : poo/seance-1/exercices.md
     #- Exercices POO Corrigé: poo/seance-1/exercices-corrige.md
     # seance 2
     - Héritage de classes : poo/seance-2/heritage.md
     - Polymorphisme : poo/seance-2/polymorphisme.md
     # seance 3
-    - Classe Object : poo/seance-3/class_object.md
-    - Méthodes spéciales : poo/seance-3/methodes_speciales.md
+    - Classe Object : poo/seance-3/class-object.md
+    - Méthodes spéciales : poo/seance-3/methodes-speciales.md
     - Encapsulation : poo/seance-3/encapsulation.md
     # - Surcharge de méthodes : poo/seance-2/surcharge_methodes.md
     # - Utilisation avancée de la POO : poo/seance-1/poo_avancee.md

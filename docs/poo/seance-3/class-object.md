@@ -18,7 +18,7 @@ Les principales méthodes spéciales définies dans la classe object incluent :
 
 - `__init__(self)`: Cette méthode est le constructeur de base de tous les objets en Python. Elle est appelée lors de la création d'une instance d'une classe pour effectuer l'initialisation.
 
-- `__str__(self)`: Cette méthode est utilisée pour représenter l'objet sous forme de chaîne de caractères lorsqu'il est converti en une chaîne (par exemple, avec la fonction `str()` ou lors de l'impression).
+- `__str__(self)`: Cette méthode est utilisée pour représenter l'objet sous forme de chaîne de caractères lorsqu'il est converti en une chaîne (par exemple, avec la fonction `str()` ou lors de l'impression avec la fonction `print()`).
 
 - `__repr__(self)`: Cette méthode est utilisée pour obtenir une représentation "formelle" de l'objet, généralement sous forme de chaîne de caractères. Elle est utilisée par la fonction `repr()`.
 

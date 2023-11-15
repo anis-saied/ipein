@@ -22,14 +22,15 @@ Le cours sur la POO en Python sera divisé en trois séances, chacune approfondi
 
 ###### Séance 1 : Syntaxe de Base de la POO en Python
 
-1. Introduction aux classes et aux objets.
-2. Création de classes et d'objets.
-3. Attributs et méthodes.
-4. Constructeurs et destructeurs.
+1. [Introduction aux classes et aux objets](../introduction).
+2. [Création de classes et d'objets](../seance-1/classes-objets).
+3. [Attributs](../seance-1/attributs) 
+4. [Méthodes](../seance-1/methodes).
+5. [Constructeurs et destructeurs](../seance-1/constructeur-destructeur).
 
-Télécharger : [Syntaxe de Base de la POO en Python.pdf](./seance-1/POO_classe_objet.pdf)
+Télécharger cours partie 1 (pdf): [Syntaxe de Base de la POO en Python.pdf](./seance-1/POO_classe_objet.pdf)
 
-Corrigé des exercices :
+Corrigé des exercices du cours:
 
 - [Ex1 class rectangle.py](../../src/2/chp2/s1/ex1_class_recatngle.py) - [Ex1 class rectangle.pdf](../../src/2/chp2/s1/ex1_class_recatngle.pdf)
 - [Ex2 class voiture.py](../../src/2/chp2/s1/ex2_class_voiture.py) - [Ex2 class voiture.pdf](../../src/2/chp2/s1/ex2_class_voiture.pdf)
@@ -37,15 +38,19 @@ Corrigé des exercices :
 
 ###### Séance 2 : Héritage, Polymorphisme et Surcharges des méthodes
 
-1. Héritage de classes.
-2. Polymorphisme.
-3. Surcharge de méthodes.
+1. [Héritage de classes](../seance-2/heritage).
+2. [Polymorphisme et surcharge de méthodes](../seance-2/polymorphisme).
 
-Télécharger : [Héritage, Polymorphisme et Surcharges des méthodes en Python.pdf](./seance-2/POO_hritage_polymorphisme_surcharge.pdf)
+
+Télécharger cours partie 2 (pdf): [Héritage, Polymorphisme et Surcharges des méthodes en Python.pdf](./seance-2/POO_hritage_polymorphisme_surcharge.pdf)
 
 ###### Séance 3 : Méthodes Spéciales et Utilisation Avancée
 
-1. La classe Object. 
-2. Les Méthodes spéciales en Python (e.g., `__str__`, `__eq__`, `__add__`).
-3. Encapsulation.
+1. [La classe Object](../seance-3/class-object). 
+2. [Les Méthodes spéciales en Python](../seance-3/methodes-speciales) (exemples : `__str__`, `__eq__`, `__add__`).
+3. [Encapsulation](../seance-3/encapsulation).
 
+
+## TP POO
+
+- [TP 1 Programmation Orientée Objet (POO) en Python](../tp-poo)
