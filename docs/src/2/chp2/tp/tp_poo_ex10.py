@@ -51,6 +51,8 @@ class PolyCreux():
                     del p.data[deg]
                     
         return p
+    
+#tester le code    
 p = PolyCreux()
 p.data={1:2,3:4}
 q = PolyCreux()
