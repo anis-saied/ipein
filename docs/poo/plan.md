@@ -50,6 +50,7 @@ Télécharger cours partie 2 (pdf): [Héritage, Polymorphisme et Surcharges des 
 2. [Les Méthodes spéciales en Python](../seance-3/methodes-speciales) (exemples : `__str__`, `__eq__`, `__add__`).
 3. [Encapsulation](../seance-3/encapsulation).
 
+Télécharger cours partie 3 (pdf): [La classe Object en Python.pdf](./seance-3/POO_classe_object.pdf)
 
 ## TP POO
 
