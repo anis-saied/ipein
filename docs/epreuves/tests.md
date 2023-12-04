@@ -1,6 +1,6 @@
 ---
 title: Tests info
-summary: Tests info avec corrigé - Premier semestre
+summary: Tests info avec corrigé 
 ---
 
 # Tests info

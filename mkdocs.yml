@@ -27,6 +27,7 @@ nav:
   - Accueil: index.md
   - Epreuves : 
     - Tests info: epreuves/tests.md
+    - DS info: epreuves/ds.md
   - Chp 0 Rappel : 
     - TP1 Rappel Python : rappel/chp0_Rappel.md
   - Chp 1 Piles & files: 
