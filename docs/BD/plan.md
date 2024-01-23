@@ -24,7 +24,7 @@ Le cours sur les bases de données, l'algèbre relationnelle et SQLite sera divi
 
 Corrigé des exercices du cours :
 
-- [Corrigé AR.pdf](./AR-corrige.sql)
+- [Corrigé AR.pdf](./AR-corrige.pdf)
 
 ###### Partie 2 : Transition de l'Algèbre Relationnelle au langage SQL
 
