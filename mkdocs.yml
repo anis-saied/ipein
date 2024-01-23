@@ -54,7 +54,8 @@ nav:
     - Encapsulation : poo/seance-3/encapsulation.md
     # - Surcharge de méthodes : poo/seance-2/surcharge_methodes.md
     # - Utilisation avancée de la POO : poo/seance-1/poo_avancee.md
-
+  - Chp 3 BD : 
+    - Plan du cours : BD/plan.md
   - Aide: 
     - Utilitaires : aide/tools.md
     - A propos : aide/about.md
