@@ -37,6 +37,7 @@ Corrigé des exercices du cours :
 ###### Partie 3 : Requêtes SQL Avancées et utilisation de SQLite en Python
 
 1. [SQL-SQLite.pdf](./SQL-SQLite.pdf)
+1. [Requete Select.pdf](./Requete-Select.pdf)
 
 Corrigé des exercices du cours :
 
