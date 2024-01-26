@@ -57,6 +57,7 @@ nav:
     # - Utilisation avancée de la POO : poo/seance-1/poo_avancee.md
   - Chp 3 BD : 
     - Plan du cours : BD/plan.md
+    - Contraintes SQL : BD/contraintes-sql.md
   - Aide: 
     - Utilitaires : aide/tools.md
     - A propos : aide/about.md
