@@ -42,3 +42,6 @@ Corrigé des exercices du cours :
 Corrigé des exercices du cours :
 
 - [Corrigé SQL-SQLite.pdf](./SQL-SQLite-corrige.pdf)
+- [Exemple d'utilisation de SQL avec SQLite-Python.py](./employes.py)
+- [Exemple de BD.db](./employes.db)
+- [Exemple de BD.sql](./employes.sql)
