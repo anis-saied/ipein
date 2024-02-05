@@ -43,5 +43,29 @@ Corrigé des exercices du cours :
 
 - [Corrigé SQL-SQLite.pdf](./SQL-SQLite-corrige.pdf)
 - [Exemple d'utilisation de SQL avec SQLite-Python.py](./employes.py)
-- [Exemple de BD.db](./employes.db)
-- [Exemple de BD.sql](./employes.sql)
+
+
+
+Vous pouvez manipuler une base données SQLite avec l'outil [**DB Browser For SQLite**](http://sqlitebrowser.org) de deux manières
+
+1. Méthode 1: Utiliser le fichier de base de données d'extension **.db** qui contient les tables créées et remplies.
+   - Télécharger le fichier [employes.db](./employes.db)
+   - Lancer l'outil DB Browser For Sqlite
+     - Menu File / open Database 
+     - choisir le fichier employes.db
+   - Ouvrir l'anglet "Execute SQL" et commncer à taper et tester des commandes SQL.
+2. Méthode 2: Créer vous-même la base de données, créer les tables et les remplir.
+   - Télécharger le fichier [employes.sql](./employes.sql)
+   - Ouvrir le logiciel BD Browser for SQLite 
+
+	- Créer une nouvelle base de données: 
+     - Menu File / New DataBase
+     - tapez le nom de la base de données, par exemple: *ma_base.db*
+     - Une fenêtre s'ouvre automatiquement pour créer la première table, Fermez la.
+   
+    - Ouvrir l'anglet "Execute SQL" 
+      - Copier/coller le contenu de fichier **employes.sql** dans la zone de texte reservée à la création du code SQL. 
+      - Cliquez sur la flèche pour exécuter ce code SQL permettant ainsi de créer toutes les tables et les remplir.
+
+Vous pouvez maintenant essayer les requêtes SQL vues en classe et répondre à d'autres questions que vous imaginez.
+
