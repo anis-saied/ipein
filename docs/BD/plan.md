@@ -54,7 +54,7 @@ Vous pouvez manipuler une base données SQLite avec l'outil [**DB Browser For SQ
 - Lancer l'outil DB Browser For Sqlite
   - Menu File / open Database
   - choisir le fichier employes.db
-- Ouvrir l'anglet "Execute SQL" et commncer à taper et tester des commandes SQL.
+- Ouvrir l'anglet "Execute SQL" et commencer à taper et tester des commandes SQL.
 
 
 
