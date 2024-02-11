@@ -58,6 +58,8 @@ nav:
   - Chp 3 BD : 
     - Plan du cours : BD/plan.md
     - Contraintes SQL : BD/contraintes-sql.md
+  - Chp 4 Simulation Numérique : 
+    - Plan du cours : SimulNum/plan.md
   - Aide: 
     - Utilitaires : aide/tools.md
     - A propos : aide/about.md
