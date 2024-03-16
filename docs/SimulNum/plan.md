@@ -11,7 +11,7 @@ Assurez-vous d'avoir les bibliothèques nécessaires installées dans votre envi
 
 1. Téléchargez et installez Python depuis [python.org](https://www.python.org/downloads/) en sélectionnant l'option "Add Python to PATH" lors de l'installation.
 
-2. Ouvrez une fenêtre de commande (cmd) et exécutez les commandes suivantes:
+2. Ouvrez une fenêtre de commandes (cmd) et exécutez les commandes suivantes:
 ```bash 
 pip install numpy
 pip install matplotlib
@@ -28,20 +28,19 @@ Le cours sur la simulation numérique couvrira plusieurs parties :
 	- [Cours Numpy et Matplotlib.pdf](./essentiel_numpy.pdf)
 	- [TD1 Numpy et Matplotlib.pdf](./TD1_numpy_Matplotlib.pdf)
 - Résolution de Systèmes Linéaires.pdf
-	- Pivot de Gauss.pdf
-	- Décomposition LU.pdf
-
-
-**Corrigé des exercices du cours :**
+	- [Pivot de Gauss.pdf](./TP_Pivot_Gauss.pdf)
+	- [Pivot de Gauss Corrigé.pdf](./TP_Pivot_Gauss_corrige.pdf)
 
 
 ###### Partie 2 : Cryptographie
 
-
+- [TD Cryptographie.pdf](./TD_Cryptographie.pdf)
+- [TD Cryptographie Corrigé.pdf](./TD_Cryptographie_corrige.pdf)
 
 ###### Partie 3 : Traitement d'Images
 
-
+- [Cours et TD traitement images.pdf](./Cours_TD_traitement_images.pdf)
+- [TD traitement images Corrigé.pdf](./TD_traitement_images_corrige.pdf)
 
 ###### Partie 4 : Interpolation de Lagrange
 
