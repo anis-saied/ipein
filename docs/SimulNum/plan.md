@@ -44,7 +44,8 @@ Le cours sur la simulation numérique couvrira plusieurs parties :
 
 ###### Partie 4 : Interpolation de Lagrange
 
-
+- [Cours et TD Interpolation de Lagrange.pdf](./Cours_TD_Interpolation_Lagrange.pdf)
+- TD Interpolation de Lagrange Corrigé [pdf](./TD_Interpolation_Lagrange_corrige.pdf) | [.py](./TD_Interpolation_Lagrange_corrige.py)
 
 
 
