@@ -7,7 +7,7 @@ Ce chapitre a pour objectif d'introduire les aspects fondamentaux de la simulati
 ## Avant de commencer
 Assurez-vous d'avoir les bibliothèques nécessaires installées dans votre environnement Python, telles que Numpy et Matplotlib pour pouvoir exécuter les exemples de code.
 
-### Installation de Numpy et Matplotlibsur 
+### Installation de Numpy et Matplotlib 
 
 1. Téléchargez et installez Python depuis [python.org](https://www.python.org/downloads/) en sélectionnant l'option "Add Python to PATH" lors de l'installation.
 
