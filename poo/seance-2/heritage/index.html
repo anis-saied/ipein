@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://anis-saied.github.io/ipein/poo/seance-2/heritage/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Héritage de classes - Ipein Info</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "H\u00e9ritage de classes";
+        var mkdocs_page_input_path = "poo/seance-2/heritage.md";
+        var mkdocs_page_url = "/ipein/poo/seance-2/heritage/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Ipein Info
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Epreuves</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/tests/">Tests info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/ds/">DS info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/examens/">Examens info</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 0 Rappel</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../rappel/chp0_Rappel/">TP1 Rappel Python</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 1 Piles & files</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/cours-piles-files/">Structures de Données Avancées</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/pile/">TP2 Les Piles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/file/">TP3 Les Files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 2 POO</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../plan/">Plan du cours</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tp-poo/">TP POO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/classes-objets/">Classes et objets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/attributs/">Attributs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/methodes/">Méthodes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/constructeur-destructeur/">Constructeurs et destructeurs</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Héritage de classes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#syntaxe-de-lheritage">Syntaxe de l'héritage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exemple-dheritage">Exemple d'héritage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-avantages">Les avantages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-precautions-a-prendre-lors-de-lutilisation-de-lheritage">Les précautions à prendre lors de l'utilisation de l'héritage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#la-relation-est-un">La relation "est-un"</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#la-relation-a-un">La relation "a-un"</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercices">Exercices</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#corriges">Corrigés</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../polymorphisme/">Polymorphisme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-3/class-object/">Classe Object</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-3/methodes-speciales/">Méthodes spéciales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-3/encapsulation/">Encapsulation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 3 BD</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../BD/plan/">Plan du cours</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../BD/contraintes-sql/">Contraintes SQL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 4 Simulation Numérique</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../SimulNum/plan/">Plan du cours</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Aide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../aide/tools/">Utilitaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../aide/about/">A propos</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Ipein Info</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Chp 2 POO</li>
+      <li class="breadcrumb-item active">Héritage de classes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="heritage-de-classes">Héritage de classes</h1>
+<h2 id="introduction">Introduction</h2>
+<p>L'héritage est une caractéristique fondamentale de la programmation orientée objet en Python, permettant de créer de nouvelles classes en se basant sur des classes existantes.</p>
+<p>L'héritage offre la possibilité de créer une classe enfant qui hérite des attributs et des méthodes d'une classe parente. Ce concept favorise la réutilisation du code et la structuration des classes en hiérarchies.</p>
+<h2 id="syntaxe-de-lheritage">Syntaxe de l'héritage</h2>
+<p>En Python, l'héritage s'effectue en spécifiant la classe parente entre parenthèses lors de la définition de la classe enfant. Par exemple :</p>
+<pre><code class="language-python">class Enfant(Parent):
+    # Attributs et méthodes spécifiques à la classe enfant
+</code></pre>
+<h2 id="exemple-dheritage">Exemple d'héritage</h2>
+<p>Pour illustrer l'héritage, nous allons créer une classe "Animal" qui servira de classe parente, puis une classe "Chien" qui héritera des caractéristiques de la classe "Animal."</p>
+<pre><code class="language-python"># Création de la classe parente &quot;Animal&quot;
+class Animal:
+    def __init__(self, nom, espece):
+        self.nom = nom
+        self.espece = espece
+
+    def afficher_info(self):
+        print(self.nom + &quot; est un &quot; + self.espece)
+
+# Création de la classe enfant &quot;Chien&quot; en utilisant l'héritage
+class Chien(Animal):
+    def __init__(self, nom, race):
+        # Appel du constructeur de la classe parente
+        super().__init__(nom, espece=&quot;chien&quot;)
+        self.race = race
+
+    # Redéfinition de la méthode afficher_info
+    def afficher_info(self):
+        print(self.nom + &quot; est un chien de race &quot; + self.race)
+
+# Création d'objets des classes Animal et Chien
+animal1 = Animal(&quot;Rex&quot;, &quot;chien&quot;)
+chien1 = Chien(&quot;Buddy&quot;, &quot;Labrador&quot;)
+
+# Appel de la méthode afficher_info de chaque objet
+animal1.afficher_info()  # Affiche &quot;Rex est un chien&quot;
+chien1.afficher_info()    # Affiche &quot;Buddy est un chien de race Labrador&quot;
+</code></pre>
+<p>Dans cet exemple, nous avons créé une classe parente "Animal" avec des attributs "nom" et "espèce" ainsi qu'une méthode "afficher_info". </p>
+<p>Ensuite, nous avons défini une classe enfant "Chien" en utilisant l'héritage de la classe "Animal". </p>
+<p>La classe "Chien" a son propre attribut "race" et redéfinit la méthode "afficher_info" pour afficher des informations spécifiques aux chiens. </p>
+<p>Enfin, nous avons créé des objets des deux classes et appelé la méthode "afficher_info" pour chaque objet.</p>
+<h2 id="les-avantages">Les avantages</h2>
+<p>Les principaux avantages de l'héritage en programmation orientée objet (POO) en Python sont les suivants :</p>
+<ul>
+<li>
+<p><strong>Avantage 1 : Réutilisation du code</strong> : L'héritage permet de <em>réutiliser les attributs et méthodes</em> d'une classe parente dans une classe enfant, <strong>évitant ainsi la duplication de code</strong>.</p>
+</li>
+<li>
+<p><strong>Avantage 2 : Création de hiérarchies de classes</strong> : Vous pouvez créer une <em>structure hiérarchique</em> de classes, où chaque classe enfant hérite des fonctionnalités de la classe parente. Par exemple, une classe "Véhicule" peut être la classe parente de "Voiture" et "Moto".</p>
+</li>
+<li>
+<p><strong>Avantage 3 : Extensibilité</strong> : Vous pouvez ajouter de nouvelles <em>fonctionnalités spécifiques à une classe enfant</em> tout en conservant les fonctionnalités héritées de la classe parente.</p>
+</li>
+<li>
+<p><strong>Avantage 4 : Modification centralisée</strong> : Si vous devez apporter des modifications à une <em>fonctionnalité partagée</em> par plusieurs classes, vous pouvez le faire dans la classe parente, ce qui affectera automatiquement toutes les classes enfant.</p>
+</li>
+<li>
+<p><strong>Avantage 5 : Développement plus rapide</strong> : L'héritage accélère le développement en <em>réduisant la quantité de code</em> que vous devez écrire pour créer de nouvelles classes.</p>
+</li>
+</ul>
+<p>Exemple :</p>
+<pre><code class="language-python"># Classe parente &quot;Animal&quot;
+class Animal:
+    def __init__(self, nom, espece):
+        self.nom = nom
+        self.espece = espece
+
+    def afficher_info(self):
+        print(self.nom + &quot; est un &quot; + self.espece)
+
+# Classe enfant &quot;Chien&quot; héritant d'Animal
+class Chien(Animal):
+    def __init__(self, nom, race):
+        super().__init__(nom, espece=&quot;chien&quot;)
+        self.race = race
+
+    def aboyer(self):
+        print(self.nom + &quot; aboie&quot;)
+
+# Sous-classe de Chien : ChienDomestique
+class ChienDomestique(Chien):
+    def __init__(self, nom, race, proprietaire):
+        super().__init__(nom, race)
+        self.proprietaire = proprietaire
+
+    def saluer_proprietaire(self):
+        print(self.nom + &quot; salue son propriétaire &quot; + self.proprietaire)
+
+
+# Utilisation de l'héritage
+animal1 = Animal(&quot;Rex&quot;, &quot;chien&quot;)
+animal1.afficher_info()  # Affiche &quot;Rex est un chien&quot;
+
+chien1 = Chien(&quot;Buddy&quot;, &quot;Labrador&quot;)
+
+chien1.afficher_info()  # Affiche &quot;Buddy est un chien&quot;
+chien1.aboyer()         # Avantage 3 : Extensibilité
+                        # Affiche &quot;Buddy aboie&quot;
+
+chien2 = ChienDomestique(&quot;Fido&quot;, &quot;Terrier&quot;, &quot;Alice&quot;)
+chien2.afficher_info()
+chien2.saluer_proprietaire()
+</code></pre>
+<p>Dans le code prédendent, grâce à l'héritage, on a pu appliquer :</p>
+<ol>
+<li>
+<p>La <strong>Réutilisation du code</strong> : La classe <em>Chien</em> réutilise le constructeur (<code>__init__</code>) de la classe parente <em>Animal</em>. Cela permet de ne pas avoir à réécrire le code pour initialiser les attributs <em>nom</em> et <em>espece</em> dans <em>Chien</em>.</p>
+</li>
+<li>
+<p>La <strong>Création de hiérarchies de classes</strong> : L'avantage de la création de hiérarchies de classes peut être illustré par la possibilité de créer des classes enfant supplémentaires qui partagent des caractéristiques communes avec la classe parente. Dans cet exemple, nous avons la classe <em>ChienDomestique</em> qui hérite de la classe <em>Chien</em>, qui à son tour hérite de la classe <em>Animal</em>. La classe <em>ChienDomestique</em> ajoute un attribut <em>proprietaire</em> et une méthode <em>saluer_proprietaire</em>, illustrant la hiérarchie d'héritage.</p>
+</li>
+<li>
+<p>L'<strong>Extensibilité</strong> : En utilisant l'héritage, nous pouvons ajouter des méthodes spécifiques aux sous-classes, comme la méthode <em>aboyer()</em>, sans modifier la classe parente. Cela permet d'étendre les fonctionnalités de manière modulaire. Dans cet exemple, l'appel à <em>aboyer()</em> sur l'objet <em>chien1</em> fonctionne sans avoir à modifier la classe <em>Animal</em> ou <em>Chien</em>.</p>
+</li>
+<li>
+<p>La <strong>Modification centralisée</strong> : Lorsque vous apportez des modifications à la classe parente (par exemple, à la méthode <em>afficher_info</em>), ces modifications se répercutent automatiquement sur les classes enfants sans avoir à les modifier individuellement.</p>
+</li>
+<li>
+<p>Le <strong>Développement rapide</strong>: Lorsque vous créez des classes enfants, vous n'avez pas besoin de réécrire l'intégralité du code de base de la classe parente. Cela accélère le développement en réduisant la quantité de code nécessaire. Par exemple, dans la classe <em>Chien</em>, vous n'avez pas à réimplémenter la méthode <em>afficher_info</em> car elle est déjà définie dans la classe parente <em>Animal</em>.</p>
+</li>
+</ol>
+<h2 id="les-precautions-a-prendre-lors-de-lutilisation-de-lheritage">Les précautions à prendre lors de l'utilisation de l'héritage</h2>
+<ul>
+<li>La première et principale précaution consiste à bien planifier la hiérarchie de classes. Il est essentiel de comprendre les relations entre les différentes classes, de déterminer quels attributs et méthodes sont appropriés pour chaque classe, et de s'assurer que l'héritage est utilisé de manière logique. </li>
+<li>Il est important de n'utiliser l'héritage que lorsque cela est approprié. <strong>L'héritage</strong> doit être utilisé pour modéliser une relation <strong>"est-un"</strong>. </li>
+<li>Si une relation <strong>"a-un"</strong> est plus appropriée, il est préférable d'utiliser <strong>la composition</strong> ou d'autres techniques. </li>
+</ul>
+<h2 id="la-relation-est-un">La relation "est-un"</h2>
+<p>La relation <strong>"est-un"</strong>(<em>is-a</em>) est une relation d'héritage entre une classe de base (superclasse) et une classe dérivée (sous-classe). </p>
+<p>Elle indique que la sous-classe est une spécialisation de la superclasse, partageant certaines caractéristiques de la superclasse tout en ajoutant des attributs et des méthodes spécifiques.</p>
+<p>Dans notre exemple précédent, nous avons utilisé une hiérarchie de classes avec "Animal" comme classe de base. "Chien" et "ChienDomestique" sont des sous-classes qui héritent des attributs et des méthodes d' "Animal." Cette organisation reflète la relation <em>"est-un"</em> : un chien est un animal, et un chien domestique est également un animal. Chacune de ces sous-classes partage des caractéristiques communes de la classe parente, tout en pouvant définir des méthodes spécifiques. </p>
+<h2 id="la-relation-a-un">La relation "a-un"</h2>
+<p>La relation <strong>"a-un"</strong> (<em>has-a</em>) est une <strong>relation de composition</strong> entre deux classes, où une classe contient une instance d'une autre classe en tant qu'attribut. Cette relation indique qu'un objet de la classe contenant possède un objet de la classe contenue.</p>
+<p>Exemple:</p>
+<pre><code class="language-python">class Moteur:
+    def __init__(self, type):
+        self.type = type
+
+class Voiture:
+    def __init__(self, marque, annee, moteur):
+        self.marque = marque
+        self.annee = annee
+        self.moteur = moteur
+
+# Création d'instances
+moteur_voiture1 = Moteur(&quot;Essence&quot;)
+voiture1 = Voiture(&quot;Toyota&quot;, 2022, moteur_voiture1)
+
+# Utilisation de l'attribut de la relation &quot;a-un&quot;
+print(voiture1.moteur.type)  # Affiche &quot;Essence&quot;
+</code></pre>
+<p>Dans cet exemple, nous avons utilisé la relation "a-un" pour modéliser une voiture. La classe "Voiture" contient un attribut "moteur," qui est une instance de la classe "Moteur." </p>
+<p>Cette organisation reflète la relation "a-un" : une voiture a un moteur. </p>
+<p>La classe "Voiture" possède les caractéristiques d'une voiture (comme la marque et l'année) tout en ayant un attribut spécifique, "moteur." </p>
+<p>Cette approche nous permet de représenter la composition d'objets dans une structure plus complexe.</p>
+<h2 id="exercices">Exercices</h2>
+<p>Ces exercices illustrent différentes utilisations de l'héritage et des relations "est-un" et "a-un" en Python:</p>
+<ol>
+<li>
+<p>Créez une nouvelle sous-classe de "Chien" appelée "ChienSportif" avec un attribut "vitesse" et une méthode "courir()" pour afficher la vitesse maximale de course. Créez une instance de "ChienSportif" et appelez la méthode "courir()".</p>
+</li>
+<li>
+<p>Modifiez la classe parente "Animal" en ajoutant un nouvel attribut (par exemple, "poids"). Assurez-vous que cette modification se reflète automatiquement dans les sous-classes. Créez une instance de "Chien" et vérifiez si vous pouvez accéder à l'attribut "poids".</p>
+</li>
+<li>
+<p>Ajoutez une nouvelle sous-classe de "ChienDomestique" appelée "ChienGarde" avec un attribut "poste" pour représenter le poste de garde du chien (par exemple, "maison" ou "entreprise"). Ajoutez une méthode "surveiller()" pour que le chien de garde puisse signaler qu'il surveille son poste. Créez une instance de "ChienGarde" et appelez la méthode "surveiller()".</p>
+</li>
+<li>
+<p>Créez une nouvelle classe "MoteurElectrique" avec un attribut "batterie" pour représenter le type de batterie (par exemple, "lithium-ion"). Ensuite, modifiez la classe "Voiture" pour inclure un attribut "moteur_electrique" qui sera une instance de la classe "MoteurElectrique." Créez une instance de "Voiture" avec un moteur électrique et accédez à l'attribut "batterie" de la classe "MoteurElectrique."</p>
+</li>
+</ol>
+<h2 id="corriges">Corrigés</h2>
+<p><strong>Question 1</strong></p>
+<pre><code class="language-python">class ChienSportif(Chien):
+    def __init__(self, nom, race, vitesse_max):
+        super().__init__(nom, race)
+        self.vitesse_max = vitesse_max
+
+    def courir(self):
+        print(self.nom + &quot; peut courir jusqu'à &quot; + str(self.vitesse_max) + &quot; km/h&quot;)
+
+chien_sportif1 = ChienSportif(&quot;Rocky&quot;, &quot;Husky&quot;, 40)
+chien_sportif1.courir()  # Affiche &quot;Rocky peut courir jusqu'à 40 km/h&quot;
+</code></pre>
+<p><strong>Question 2</strong></p>
+<pre><code class="language-python"># Modification de la classe parente Animal
+class Animal:
+    def __init__(self, nom, espece, poids):
+        self.nom = nom
+        self.espece = espece
+        self.poids = poids
+
+# La classe Chien hérite automatiquement de la modification
+nouveau_chien = Chien(&quot;Buddy&quot;, &quot;Labrador&quot;, 25)
+print(nouveau_chien.nom + &quot; est un &quot; + nouveau_chien.espece + &quot; pesant &quot; + str(nouveau_chien.poids) + &quot; kg&quot;)
+</code></pre>
+<p><strong>Question 3</strong></p>
+<pre><code class="language-python">class ChienGarde(ChienDomestique):
+    def __init__(self, nom, race, proprietaire, poste):
+        super().__init__(nom, race, proprietaire)
+        self.poste = poste
+
+    def surveiller(self):
+        print(self.nom + &quot; surveille le poste de &quot; + self.poste)
+
+chien_garde = ChienGarde(&quot;Max&quot;, &quot;Berger Allemand&quot;, &quot;Maison&quot;, &quot;Jardin&quot;)
+chien_garde.surveiller()  # Affiche &quot;Max surveille le poste de Jardin&quot;
+</code></pre>
+<p><strong>Question 4</strong></p>
+<pre><code class="language-python">class MoteurElectrique:
+    def __init__(self, batterie):
+        self.batterie = batterie
+
+class Voiture:
+    def __init__(self, marque, annee, moteur_electrique):
+        self.marque = marque
+        self.annee = annee
+        self.moteur_electrique = moteur_electrique
+
+# Création d'instances
+moteur_electrique_voiture = MoteurElectrique(&quot;Lithium-ion&quot;)
+voiture_electrique = Voiture(&quot;Tesla&quot;, 2023, moteur_electrique_voiture)
+
+# Accès à l'attribut &quot;batterie&quot; de la classe MoteurElectrique via la classe Voiture
+print(voiture_electrique.moteur_electrique.batterie)  # Affiche &quot;Lithium-ion&quot;
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../seance-1/constructeur-destructeur/" class="btn btn-neutral float-left" title="Constructeurs et destructeurs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../polymorphisme/" class="btn btn-neutral float-right" title="Polymorphisme">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../seance-1/constructeur-destructeur/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../polymorphisme/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
