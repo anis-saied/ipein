@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://anis-saied.github.io/ipein/poo/seance-3/methodes-speciales/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Méthodes spéciales - Ipein Info</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "M\u00e9thodes sp\u00e9ciales";
+        var mkdocs_page_input_path = "poo/seance-3/methodes-speciales.md";
+        var mkdocs_page_url = "/ipein/poo/seance-3/methodes-speciales/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Ipein Info
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Epreuves</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/tests/">Tests info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/ds/">DS info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/examens/">Examens info</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 0 Rappel</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../rappel/chp0_Rappel/">TP1 Rappel Python</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 1 Piles & files</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/cours-piles-files/">Structures de Données Avancées</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/pile/">TP2 Les Piles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/file/">TP3 Les Files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 2 POO</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../plan/">Plan du cours</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tp-poo/">TP POO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/classes-objets/">Classes et objets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/attributs/">Attributs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/methodes/">Méthodes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/constructeur-destructeur/">Constructeurs et destructeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-2/heritage/">Héritage de classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-2/polymorphisme/">Polymorphisme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../class-object/">Classe Object</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Méthodes spéciales</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#methode-__init__">Méthode __init__</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#methodes-__str__-et-__repr__">Méthodes __str__ et __repr__</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#methodes-doperation-mathematique">Méthodes d'Opération Mathématique</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#methode-__eq__">Méthode __eq__</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#methode-__len__">Méthode __len__</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercices">Exercices</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../encapsulation/">Encapsulation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 3 BD</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../BD/plan/">Plan du cours</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../BD/contraintes-sql/">Contraintes SQL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 4 Simulation Numérique</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../SimulNum/plan/">Plan du cours</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Aide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../aide/tools/">Utilitaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../aide/about/">A propos</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Ipein Info</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Chp 2 POO</li>
+      <li class="breadcrumb-item active">Méthodes spéciales</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="les-methodes-speciales-en-python">Les Méthodes Spéciales en Python</h1>
+<p>Les <em>méthodes spéciales</em>, ou <em>méthodes magiques</em>, sont des méthodes prédéfinies en Python avec un nom qui commence et se termine par un double souligné (par exemple, <code>__init__</code>, <code>__str__</code>, <code>__add__</code>). </p>
+<p>Elles sont utilisées pour <strong>surcharger</strong> le comportement de base des opérations et des fonctions associées aux objets.</p>
+<h2 id="methode-__init__">Méthode <code>__init__</code></h2>
+<p>La méthode <code>__init__(self)</code> est le constructeur de base de tous les objets en Python. Elle est appelée lors de la création d'une instance d'une classe pour effectuer l'initialisation.</p>
+<p>Exemple d'utilisation :</p>
+<pre><code class="language-python">class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+</code></pre>
+<h2 id="methodes-__str__-et-__repr__">Méthodes <code>__str__</code> et <code>__repr__</code></h2>
+<p>La méthode <code>__str__(self)</code> est utilisée pour représenter l'objet sous forme de chaîne de caractères  lorsqu'il est converti en une chaîne (par exemple, avec la fonction <code>str()</code> ou lors de l'impression avec <code>print()</code>).</p>
+<p>La méthode <code>__repr__(self)</code> est utilisée pour obtenir une représentation "formelle" de l'objet, généralement utilisée pour le débogage par la fonction <code>repr()</code>.</p>
+<p>Exemple d'utilisation :</p>
+<pre><code class="language-python">class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+    def __str__(self):
+        return self.nom + &quot; &quot;+ self.age +&quot;ans&quot;
+
+    def __repr__(self):
+        return &quot;Personne({}, {})&quot;.format(self.nom,self.age)
+</code></pre>
+<p>Les méthodes <code>__str__</code> et <code>__repr__</code>  sont utilisées pour la représentation textuelle d'un objet. Si elles ne sont pas surchargées dans une classe, Python utilise les implémentations par défaut de la classe <code>object</code> pour afficher l'objet.</p>
+<h2 id="methodes-doperation-mathematique">Méthodes d'Opération Mathématique</h2>
+<p>Les méthodes spéciales d'opération mathématique permettent de personnaliser le comportement des opérateurs mathématiques tels que l'addition <code>__add__</code>, la soustraction <code>__sub__</code>, la multiplication <code>__mul__</code>, etc.</p>
+<p>Exemple d'utilisation :</p>
+<pre><code class="language-python">class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
+</code></pre>
+<h2 id="methode-__eq__">Méthode <code>__eq__</code></h2>
+<p>La méthode <code>__eq__(self,other)</code> permet de personnaliser la comparaison d'égalité entre deux objets de la classe..</p>
+<p>Exemple d'utilisation :</p>
+<pre><code class="language-python">class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+    def __eq__(self, other):
+        return self.nom == other.nom and self.age == other.age
+</code></pre>
+<h2 id="methode-__len__">Méthode <code>__len__</code></h2>
+<p>La méthode <code>__len__</code> permet de personnaliser la manière dont la taille d'un objet est calculée.</p>
+<p>Exemple d'utilisation :</p>
+<p>Pour une classe de bibliothèque, vous pouvez surcharger la méthode <code>__len__</code> pour renvoyer le nombre total de livres disponibles dans cette bibliothèque. </p>
+<pre><code class="language-python">class Livre:
+    def __init__(self, titre, auteur):
+        self.titre = titre
+        self.auteur = auteur
+
+class Bibliotheque:
+    def __init__(self):
+        self.livres = []
+
+    def ajouter_livre(self, livre):
+        self.livres.append(livre)
+
+    def __len__(self):
+        return len(self.livres)
+
+# Créez une instance de la classe Bibliotheque
+ma_bibliotheque = Bibliotheque()
+
+# Ajoutez des livres à la bibliothèque
+livre1 = Livre(&quot;L'Alchimiste&quot;, &quot;Paulo Coelho&quot;)
+livre2 = Livre(&quot;1984&quot;, &quot;George Orwell&quot;)
+livre3 = Livre(&quot;Le Petit Prince&quot;, &quot;Antoine de Saint-Exupéry&quot;)
+
+ma_bibliotheque.ajouter_livre(livre1)
+ma_bibliotheque.ajouter_livre(livre2)
+ma_bibliotheque.ajouter_livre(livre3)
+
+# Utilisation de la méthode __len__ pour obtenir le nombre de livres dans la bibliothèque
+nombre_de_livres = len(ma_bibliotheque)
+
+print(&quot;Nombre de livres dans la bibliothèque :&quot;, nombre_de_livres)
+</code></pre>
+<h2 id="exercices">Exercices</h2>
+<ol>
+<li>Créez une classe <em>Vecteur</em> qui représente des vecteurs en 2D avec des attributs x et y. La classe doit avoir une méthode spéciale <code>__abs__</code> pour calculer la norme du vecteur.</li>
+</ol>
+<p>Rappel : La fonction <code>abs()</code> appliquée à un vecteur en mathématiques (en particulier en géométrie) renvoie la norme du vecteur. La norme d'un vecteur est une mesure de sa longueur, c'est-à-dire la distance du point de départ (origine) au point d'extrémité (bout de la flèche) du vecteur.</p>
+<p>Pour un vecteur bidimensionnel (x, y), la formule est la suivante :</p>
+<p><code>Norme = √(x^2 + y^2)</code></p>
+<p>Pour un vecteur tridimensionnel (x, y, z), la formule est étendue comme suit :</p>
+<p><code>Norme = √(x^2 + y^2 + z^2)</code></p>
+<p><strong>Solution</strong></p>
+<pre><code class="language-python">import math
+
+class Vecteur:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __abs__(self):
+        return math.sqrt(self.x ** 2 + self.y ** 2)
+
+# Exemple d'utilisation
+v = Vecteur(3, 4)
+norme = abs(v)
+
+print(&quot;Norme du vecteur :&quot;,norme)
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>Les méthodes spéciales en Python permettent de personnaliser le comportement des objets de vos classes. Elles facilitent l'interaction avec ces objets et rendent votre code plus lisible et plus propre. En les utilisant correctement, vous pouvez concevoir des classes plus expressives et puissantes.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../class-object/" class="btn btn-neutral float-left" title="Classe Object"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../encapsulation/" class="btn btn-neutral float-right" title="Encapsulation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../class-object/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../encapsulation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://anis-saied.github.io/ipein/poo/seance-2/polymorphisme/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Polymorphisme - Ipein Info</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Polymorphisme";
+        var mkdocs_page_input_path = "poo/seance-2/polymorphisme.md";
+        var mkdocs_page_url = "/ipein/poo/seance-2/polymorphisme/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Ipein Info
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Accueil</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Epreuves</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/tests/">Tests info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/ds/">DS info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../epreuves/examens/">Examens info</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 0 Rappel</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../rappel/chp0_Rappel/">TP1 Rappel Python</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 1 Piles & files</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/cours-piles-files/">Structures de Données Avancées</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/pile/">TP2 Les Piles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../piles-files/file/">TP3 Les Files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 2 POO</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../plan/">Plan du cours</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tp-poo/">TP POO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/classes-objets/">Classes et objets</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/attributs/">Attributs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/methodes/">Méthodes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-1/constructeur-destructeur/">Constructeurs et destructeurs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../heritage/">Héritage de classes</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Polymorphisme</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comprendre-le-polymorphisme">Comprendre le Polymorphisme</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#polymorphisme-de-methode">Polymorphisme de Méthode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#polymorphisme-doperateur">Polymorphisme d'Opérateur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#avantages-du-polymorphisme">Avantages du Polymorphisme</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exercices">Exercices</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-3/class-object/">Classe Object</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-3/methodes-speciales/">Méthodes spéciales</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../seance-3/encapsulation/">Encapsulation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 3 BD</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../BD/plan/">Plan du cours</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../BD/contraintes-sql/">Contraintes SQL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Chp 4 Simulation Numérique</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../SimulNum/plan/">Plan du cours</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Aide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../aide/tools/">Utilitaires</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../aide/about/">A propos</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Ipein Info</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Chp 2 POO</li>
+      <li class="breadcrumb-item active">Polymorphisme</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="le-polymorphisme-en-python">Le Polymorphisme en Python</h1>
+<p>Le polymorphisme est l'un des principes fondamentaux de la programmation orientée objet (POO) qui permet à des objets de différentes classes d'être traités de manière uniforme. </p>
+<p>Cela signifie que vous pouvez utiliser des méthodes ou des opérateurs sur ces objets sans vous soucier de leur type spécifique. En Python, le polymorphisme est largement pris en charge grâce à la flexibilité du langage.</p>
+<h2 id="comprendre-le-polymorphisme">Comprendre le Polymorphisme</h2>
+<p>Le polymorphisme peut être divisé en deux types principaux : le polymorphisme de méthode et le polymorphisme d'opérateur.</p>
+<h2 id="polymorphisme-de-methode">Polymorphisme de Méthode</h2>
+<p>Le polymorphisme de méthode vous permet d'appeler une méthode sur un objet, et <em>la méthode exécutée dépend du type de cet objet</em>. Par exemple, supposons que nous ayons deux classes, <code>Chien</code> et <code>Chat</code>, chacune ayant une méthode <code>crier</code> :</p>
+<pre><code class="language-python">class Chien:
+    def crier(self):
+        return &quot;Woof!&quot;
+
+class Chat:
+    def crier(self):
+        return &quot;Miaou!&quot;
+</code></pre>
+<p>Maintenant, nous pouvons créer des objets de ces classes et appeler la méthode crier :</p>
+<pre><code class="language-python">chien = Chien()
+chat = Chat()
+
+animaux = [chien, chat]
+
+for animal in animaux:
+    print(animal.crier())
+</code></pre>
+<p>Lorsque nous appelons crier sur chaque objet, la méthode appropriée est appelée en fonction du type de l'objet.</p>
+<h2 id="polymorphisme-doperateur">Polymorphisme d'Opérateur</h2>
+<p>Le polymorphisme d'opérateur permet d'utiliser des opérateurs sur des objets de différentes classes. </p>
+<p>Par exemple, vous pouvez utiliser l'opérateur <code>+</code> pour concaténer des chaînes de caractères, mais aussi pour ajouter des nombres :</p>
+<pre><code class="language-python">a = 5
+b = 10
+resultat = a + b
+print(resultat)  # Affiche 15
+
+chaine1 = &quot;Hello, &quot;
+chaine2 = &quot;world!&quot;
+resultat = chaine1 + chaine2
+print(resultat)  # Affiche &quot;Hello, world!&quot;
+</code></pre>
+<p>Python permet d'utiliser de nombreux opérateurs de cette manière, tant que les classes définissent les méthodes spéciales appropriées, comme <code>__add__</code>, <code>__sub__</code>, etc.</p>
+<h2 id="avantages-du-polymorphisme">Avantages du Polymorphisme</h2>
+<p>Le polymorphisme présente plusieurs avantages :</p>
+<ul>
+<li><strong>Flexibilité</strong>: Vous pouvez traiter différents objets de manière uniforme, ce qui simplifie le code.</li>
+</ul>
+<p>Exemple :</p>
+<pre><code class="language-python">class Animal:
+    def __init__(self, nom):
+        self.nom = nom
+
+    def faire_crier(self):
+        pass
+
+class Chien(Animal):
+    def faire_crier(self):
+        return &quot;Woof!&quot;
+
+class Chat(Animal):
+    def faire_crier(self):
+        return &quot;Miaou!&quot;
+
+# Utilisation de la flexibilité du polymorphisme
+def faire_crier_et_afficher(animal):
+    print(&quot;{} fait {}&quot;.format(animal.nom, animal.faire_crier()))
+
+animaux = [Chien(&quot;Rex&quot;), Chat(&quot;Whiskers&quot;)]
+
+for animal in animaux:
+    faire_crier_et_afficher(animal)
+</code></pre>
+<p>Dans cet exemple, nous utilisons le polymorphisme pour appeler la méthode <em>faire_crier</em> sur des objets de différentes classes, ce qui permet à chaque animal de faire le bruit approprié.</p>
+<ul>
+<li><strong>Réutilisation du Code</strong> : Vous pouvez réutiliser des méthodes ou des opérateurs sur des objets de différentes classes.</li>
+</ul>
+<p>Exemple : </p>
+<pre><code class="language-python">class Forme:
+    def aire(self):
+        pass
+
+class Cercle(Forme):
+    def __init__(self, rayon):
+        self.rayon = rayon
+
+    def aire(self):
+        return 3.14159265359 * self.rayon * self.rayon
+
+class Rectangle(Forme):
+    def __init(self, longueur, largeur):
+        self.longueur = longueur
+        self.largeur = largeur
+
+    def aire(self):
+        return self.longueur * self.largeur
+
+# Utilisation de la réutilisation du code via le polymorphisme
+cercle = Cercle(5)
+rectangle = Rectangle(4, 6)
+
+formes = [cercle, rectangle]
+
+for forme in formes:
+    print(f&quot;L'aire de la forme est {forme.*aire()*}&quot;)
+</code></pre>
+<ul>
+<li><strong>Extension Facile</strong>: Vous pouvez étendre le polymorphisme pour prendre en charge de nouvelles classes sans modifier le code existant.</li>
+</ul>
+<p>Exemple :</p>
+<pre><code class="language-python"># Nouvelle classe Triangle
+class Triangle(Forme):
+    def __init__(self, base, hauteur):
+        self.base = base
+        self.hauteur = hauteur
+
+    def aire(self):
+        return 0.5 * self.base * self.hauteur
+
+triangle = Triangle(3, 4)
+
+# Sans modifier le code existant, nous pouvons ajouter un triangle à la liste des formes
+formes.append(triangle)
+
+for forme in formes:
+    print(f&quot;L'aire de la forme est {forme.*aire()*}&quot;)
+</code></pre>
+<h2 id="exercices">Exercices</h2>
+<p><strong>Exercice 1</strong> : Calcul d'aire de formes géométriques</p>
+<ol>
+<li>Écrivez une classe de base appelée Forme avec une méthode <em>aire()</em>.</li>
+<li>Ensuite, créez trois sous-classes de Forme : <em>Cercle</em>, <em>Rectangle</em>, et <em>Triangle</em>, chacune avec sa propre implémentation de la méthode <em>aire()</em>.</li>
+<li>Enfin, créez une liste de formes contenant des instances de ces trois sous-classes.</li>
+<li>Calculez et affichez l'aire de chaque forme à partir de la liste.</li>
+</ol>
+<p><strong>Solution</strong></p>
+<pre><code class="language-python">class Forme():
+    def aire(self):
+        pass
+
+class Cercle(Forme):
+    def __init__(self, rayon):
+        self.rayon = rayon
+
+    def aire(self):
+        return 3.14159265359 * self.rayon * self.rayon
+
+class Rectangle(Forme):
+    def __init__(self, longueur, largeur):
+        self.longueur = longueur
+        self.largeur = largeur
+
+    def aire(self):
+        return self.longueur * self.largeur
+
+class Triangle(Forme):
+    def __init__(self, base, hauteur):
+        self.base = base
+        self.hauteur = hauteur
+
+    def aire(self):
+        return 0.5 * self.base * self.hauteur
+
+# Création d'une liste de formes
+formes = [Cercle(5), Rectangle(4, 6), Triangle(3, 4)]
+
+# Calcul et affichage de l'aire de chaque forme
+for forme in formes:
+    print(&quot;L'aire de la forme est &quot;+str(forme.aire()))
+
+# Résultat attendu :
+# L'aire du cercle est 78.53981633974483
+# L'aire du rectangle est 24
+# L'aire du triangle est 6.0
+</code></pre>
+<p><strong>Exercice 2</strong> : Polymorphisme avec des véhicules</p>
+<ol>
+<li>
+<p>Créez une classe de base appelée <em>Vehicule</em> avec une méthode <em>afficher_info</em> qui affiche des informations de base sur le véhicule, telles que le nom du véhicule.</p>
+</li>
+<li>
+<p>Créez trois sous-classes de Vehicule : <em>Voiture</em>, <em>Moto</em>, et <em>Velo</em>, chacune avec son propre constructeur et des informations spécifiques (par exemple, le nombre de roues pour chaque type de véhicule).</p>
+</li>
+<li>
+<p>Instanciez plusieurs véhicules de chaque type (voiture, moto, vélo) et stockez-les dans une liste.</p>
+</li>
+<li>
+<p>Utilisez le polymorphisme pour appeler la méthode <em>afficher_info</em> pour chaque véhicule de la liste, affichant ainsi des informations spécifiques à chaque type de véhicule.</p>
+</li>
+</ol>
+<p><strong>Solution</strong></p>
+<pre><code class="language-python">class Vehicule:
+    def __init__(self, nom):
+        self.nom = nom
+
+    def afficher_info(self):
+        print(&quot;Véhicule : {}&quot;.format(self.nom))
+
+class Voiture(Vehicule):
+    def __init__(self, nom, roues):
+        super().__init__(nom)
+        self.roues = roues
+
+    def afficher_info(self):
+        print(&quot;Voiture : {}, Roues : {}&quot;.format(self.nom, self.roues))
+
+class Moto(Vehicule):
+    def __init__(self, nom, roues):
+        super().__init__(nom)
+        self.roues = roues
+
+    def afficher_info(self):
+        print(&quot;Moto : {}, Roues : {}&quot;.format(self.nom, self.roues))
+
+class Velo(Vehicule):
+    def __init__(self, nom, roues):
+        super().__init__(nom)
+        self.roues = roues
+
+    def afficher_info(self):
+        print(&quot;Vélo : {}, Roues : {}&quot;.format(self.nom, self.roues))
+
+# Création d'une liste de véhicules
+vehicules = [Voiture(&quot;Sedan&quot;, 4), Moto(&quot;Sportive&quot;, 2), Velo(&quot;Montagne&quot;, 2), Voiture(&quot;Compacte&quot;, 4)]
+
+# Utilisation du polymorphisme pour afficher les informations de chaque véhicule
+for vehicule in vehicules:
+    vehicule.afficher_info()
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../heritage/" class="btn btn-neutral float-left" title="Héritage de classes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../seance-3/class-object/" class="btn btn-neutral float-right" title="Classe Object">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../heritage/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../seance-3/class-object/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
